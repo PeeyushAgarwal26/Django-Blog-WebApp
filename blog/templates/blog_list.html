@@ -14,9 +14,9 @@ Blog WebPage
                 <div class="img"><img src="{{blog.photo.url}}" alt="Image"></div>
                 <div class="card-body">
                     <h5 class="card-title">{{blog.user.username}}</h5>
-                    <p class="card-text">{{blog.text}}</p>
+                    <p style="text-overflow: ellipsis; overflow: hidden; font-size: 16px;" class="card-text">{{blog.text}}</p>
                     {% if blog.user == user %}
-                    <span>
+                    <span class="btnss">
                         <a href="{% url 'blog_edit' blog.id %}" class="btn btn-edit">Edit</a>
                         <a href="{% url 'blog_delete' blog.id %}" class="btn btn-delete">Delete</a>
                     </span>
