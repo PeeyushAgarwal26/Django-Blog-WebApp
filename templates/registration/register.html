@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Register Page
+{% endblock %}
+
+{% block content %}
+<section class="section-register-form" style="display: flex; 
+flex-direction: column; 
+justify-items: center; 
+align-items: center;
+text-align: left;
+font-size: 20px;
+">
+    <h2 style="font-size: 38px;">Registration Form</h2>
+    <form method="post" class="form form-register" style="width: 800px;">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-submit" type="submit" style="margin: 15px 0px; font-size: 16px; padding: 7px 14px;">Register</button>
+    </form>
+    <p>Already have an account? <a href="{% url 'login' %}">Log In</a></p>
+</section>
+{% endblock %}

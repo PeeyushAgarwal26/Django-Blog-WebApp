@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Blog WebPage
+{% endblock %}
+
+{% block content %}
+<h1>Welcome to Blog website made with django</h1>
+<h2>
+    {% if form.instance.pk %}
+    Edit Blog
+    {% else %}
+    Create Blog
+    {% endif %}
+
+    <form method="post" enctype="multipart/form-data" class="form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-submit" type="submit">Submit</button>
+    </form>
+    <a href="{% url 'blog_list' %}">Back to Home</a>
+</h2>
+{% endblock %}

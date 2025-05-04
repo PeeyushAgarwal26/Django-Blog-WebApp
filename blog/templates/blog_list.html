@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Blog WebPage
+{% endblock %}
+
+{% block content %}
+<div class="hero-section">
+    <section class="blogs-section">
+        <a href="{% url 'blog_create' %}" class="btn btn-edit">Create a Blog</a>
+        <section class="section-list">
+            {% for blog in blogs %}
+            <div class="card">
+                <div class="img"><img src="{{blog.photo.url}}" alt="Image"></div>
+                <div class="card-body">
+                    <h5 class="card-title">{{blog.user.username}}</h5>
+                    <p class="card-text">{{blog.text}}</p>
+                    {% if blog.user == user %}
+                    <span>
+                        <a href="{% url 'blog_edit' blog.id %}" class="btn btn-edit">Edit</a>
+                        <a href="{% url 'blog_delete' blog.id %}" class="btn btn-delete">Delete</a>
+                    </span>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </section>
+    </section>
+</div>
+{% endblock %}

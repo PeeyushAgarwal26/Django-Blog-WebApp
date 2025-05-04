@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* CSS is Done by:- Peeyush Agarwal */
+
+:root {
+    --text-clr: #213053;
+    --text-clr2: #1D263A;
+    --but-bg: #1787FC;
+    --dot-clr: #F18B62;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    height: 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 132px;
+}
+
+nav .logo {
+    color: var(--text-clr);
+    font-weight: 900;
+    font-size: 24px;
+}
+
+nav .logo #dot{
+    font-size: 30px;
+    color: var(--dot-clr);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    letter-spacing: 0.5px;
+    justify-items: center;
+    align-items: center;
+}
+
+ul a {
+    text-decoration: none;
+    color: var(--text-clr);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.toggle {
+    display: none;
+}
+
+/* ------- Nav Bar Ends ------- */
+
+.container {
+    font-size: 28px;
+    color: #213053;
+    text-align: center;
+}
+
+.container div.hero-section {
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.container section.blogs-section {
+    /* overflow: hidden; */
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.container section.section-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* grid-template-rows: 3fr; */
+    gap: 20px;
+}
+.container section.section-list .card{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.container section.section-list .card{
+    height: 380px;
+    width: 380px;
+    flex-direction: column;
+    color: whitesmoke;
+    background-color: #1D263A;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card .img{
+    height: 170px;
+    width: 170px;
+    /* overflow: hidden; */
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.container section.section-list .card .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.btn {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: whitesmoke;
+    padding: 7px 14px;
+    border-radius: 10px;
+    /* margin: 10px; */
+}
+
+.btn.btn-submit {
+    background-color: rgb(16, 170, 16);
+}
+
+.btn.btn-edit {
+    background-color: rgb(56, 79, 255);
+}
+
+.btn.btn-delete {
+    background-color: rgb(245, 69, 69);
+}
+
+
+
+
+
+/*----- Forms -----*/
+
+.form.form-register ul {
+    margin: 12px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 14px;
+}
+
+.form.form-register p,
+.form.form-login p {
+    margin: 20px 0px;
+}
+
+.form.form-register p input,
+.form.form-login p input {
+    display: block;
+    width: 95%;
+    padding: 5px 8px;
+    border: 2px solid #1787FC;
+    border-radius: 5px;
+}
+
+.form.form-register p span {
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+/* ----- Footer Starts From Here ----- */
+footer {
+    height: 523px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 351px;
+    padding-left: 152px;
+}
+
+footer div.right span {
+    font-size: 24px;
+    font-weight: 600;
+    color: #213053;
+    margin-bottom: 35px;
+    align-self: flex-start;
+}
+
+footer div.right span#dot {
+    color: #F18B62;
+}
+
+footer .right p {
+    font-size: 17px;
+    color: var(--text-clr2);
+    opacity: 0.8;
+}
+
+footer .left {
+    display: flex;
+    padding-right: 208px;
+    gap: 65px;
+    font-weight: 900;
+}
+
+footer .left ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--text-clr2);
+    font-size: 17px;
+}
+
+footer .left .heading {
+    display: block;
+    margin-bottom: 44px;
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+footer .left ul li {
+    padding-bottom: 20px;
+}
+/* ----- Footer Ends Here ----- */
