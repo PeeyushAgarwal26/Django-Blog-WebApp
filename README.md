@@ -37,11 +37,13 @@ This is a simple and functional Blog Web Application built using the **Django** 
 ---
 
 ## 🌟 Check the demo
-[Visit the Site](https://blog-webapp-bay.vercel.app/)
+[Visit the Site](https://blog-webapp-bay.vercel.app/)  
+The Demo for now doesn't provide the full functionality of the project like, registration, login, logout because a database is required for that and Vercel does not support sqlite3.  
+The full functionality of project could be seen by following the below steps:
 
 ---
 
-## OR Get full access using, Setup Instructions 🛠
+## Setup Instructions 🛠
 
 1. **Clone the repository**
 ```bash
@@ -76,7 +78,7 @@ This is a simple and functional Blog Web Application built using the **Django** 
 ---
 
 ## ✅ Future Improvements
-    - Add categories/tags to organize blogs
+-   - Add categories/tags to organize blogs
     - Add search user feature
     - Add comment system
     - Improve Frontend with Bootstrap or Tailwind CSS
@@ -85,5 +87,5 @@ This is a simple and functional Blog Web Application built using the **Django** 
 ---
 
 ## 🙋‍♂️ Author
-Developed by Peeyush Agarwal
-Feel free to connect on [LinkedIn](www.linkedin.com/in/peeyush-agarwal26)
+Developed by Peeyush Agarwal  
+Feel free to connect on [LinkedIn](https://www.linkedin.com/in/peeyush-agarwal26/)
